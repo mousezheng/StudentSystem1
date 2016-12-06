@@ -33,36 +33,54 @@
   </head>
   
   <body>
-    <h2 align="center">修改密码</h2>
-    <hr>
-    <div style="width: 100%" align="center">
-		<form name="form1" action="ResetPassword" align="center">
-			<table>
+	<div style="height:10%">
+		<jsp:include page="Head.jsp"></jsp:include>
+	</div>
+    <div style="width: 100%;height: 80%;background-color: 55EEEE" align="center">
+		<form name="form1" action="ResetPassword" align="center" style="padding-top: 100px">
+			<table  align="center" style="font-size: 25px">
 		   		<tr>
 		   			<td>旧密码</td>
 		   			<td>
-		   				<input type="password" id = "oldPassword" name = "oldPassword"/> 
+		   				<input style="height: 30px" type="password" id = "oldPassword" name = "oldPassword"/> 
 		   			</td>
 		   		</tr>
 		   		<tr>
 		   			<td>新密码</td>
 		   			<td>
-		   				<input type="password" id = "newPassword" name = "newPassword"/> 
+		   				<input style="height: 30px" type="password" id = "newPassword" name = "newPassword"/> 
 		   			</td>
 		   		</tr>
 		   		<tr>
 		   			<td>确认密码</td>
 		   			<td>
-		   				<input type="confirmPassword" id = "confirmPassword" name = "confirmPassword" /> 
+		   				<input style="height: 30px" type="confirmPassword" id = "confirmPassword" name = "confirmPassword" /> 
 		   			</td>
 		   		</tr>
 		   		<ty>
 		   			<td></td>
-		   			<td> <input type="button" value="提交" onclick="judge()" /> &nbsp
-		   			 <input style="" type="reset" value="重置" /> </td>
+		   			<td> <input style="font-size: 25px" type="button" value="提交" onclick="judge()" /> &nbsp
+		   			 <input style="font-size: 25px" style="" type="reset" value="重置" /> </td>
 		   		</ty>
 	   		</table>
 	   	</form>
    	 </div>
+   	 <div style="height: 10%;">
+		<jsp:include page="Tail.jsp"></jsp:include>
+	</div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

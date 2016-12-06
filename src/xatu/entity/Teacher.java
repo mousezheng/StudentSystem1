@@ -8,6 +8,22 @@ public class Teacher{
 	private String teacherName;
 	private String password;
 	private String teacherNum;
+	private String className;
+	private String classTime;
+	
+	
+	public String getClassTime() {
+		return classTime;
+	}
+	public void setClassTime(String classTime) {
+		this.classTime = classTime;
+	}
+	public String getClassName() {
+		return className;
+	}
+	public void setClassName(String className) {
+		this.className = className;
+	}
 	/**
 	 * 获得教师的姓名
 	 * @return

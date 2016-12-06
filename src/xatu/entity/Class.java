@@ -10,7 +10,7 @@ public class Class {
 	private String classId;
 	private String className;
 	private int classTime;
-//	private String teacherName;
+	private String teacherName;
 	private int grade;
 	/**
 	 * 得到课程号
@@ -58,16 +58,16 @@ public class Class {
 	 * 得到老师实例
 	 * @return
 	 */
-//	public String getTeacherName() {
-//		return teacherName;
-//	}
-//	/**
-//	 * 设置老师姓名
-//	 * @param teacherName
-//	 */
-//	public void setTeacherName(String teacherName) {
-//		this.teacherName = teacherName;
-//	}
+	public String getTeacherName() {
+		return teacherName;
+	}
+	/**
+	 * 设置老师姓名
+	 * @param teacherName
+	 */
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
 	/**
 	 * 得到成绩
 	 * @return

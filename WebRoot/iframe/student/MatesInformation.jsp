@@ -8,17 +8,19 @@
   
   <body>
   	<h1 align="center">同学信息</h1><hr/>
-  	<table border="1px"  style="font-size: 40px">
-  		<tr>
-  			<th>学号</th>
-  			<th>姓名</th>
-  		</tr>
-  		<c:forEach items="${classMates}" var="classMates">
-  			<tr>
-  				<td><c:out value="${classMates.studentNum}"></c:out> </td>
-  				<td><c:out value="${classMates.studentName}"></c:out></td>
-  			</tr>
-  		 </c:forEach>
-  	</table>
+  	<div style="padding-top: 10%;">
+	  	<table border="1px"  style="font-size: 40px;text-align: center;" align="center">
+	  		<tr>
+	  			<th width="20%">学号</th>
+	  			<th width="20%">姓名</th>
+	  		</tr>
+	  		<c:forEach items="${classMates}" var="classMates">
+	  			<tr>
+	  				<td><c:out value="${classMates.studentNum}"></c:out> </td>
+	  				<td><c:out value="${classMates.studentName}"></c:out></td>
+	  			</tr>
+	  		 </c:forEach>
+	  	</table>
+  	</div>
   </body>
 </html>

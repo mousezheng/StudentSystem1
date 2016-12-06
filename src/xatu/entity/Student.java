@@ -8,7 +8,21 @@ public class Student{
 	private String studentName;	//学生姓名	
 	private String password;	//密码
 	private String studentNum;	//学号	
+	private String grade;		//成绩
+	private String className;	//课程名
 	
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	public String getClassName() {
+		return className;
+	}
+	public void setClassName(String className) {
+		this.className = className;
+	}
 	/**
 	 * 获得学生的姓名
 	 * @return

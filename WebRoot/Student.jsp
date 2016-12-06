@@ -41,11 +41,11 @@
    	<div style="height:10%">
     	<jsp:include page="Head.jsp"></jsp:include>
     </div>
-    <h2 align="center">学生页面</h2><hr>
-    <table name="table1" style="background-color: EEEEEE;height:80%;" width="100%">
+  
+    <table name="table1" style="background-color: EEEEEE;height:90%;" width="100%">
     	<tr>
 	    	<td width="15%">
-	    		<div style="width: 100%;background-color: AA0000;height: 100%">
+	    		<div style="width: 100%;background-color: DDDDDD;height: 100%">
 	    			<div id="div1" tabindex='1' class = "studentButton" onclick="switchIframe(1)">个人信息</div><br/>
 	    			<div id="div2" tabindex='2' class = "studentButton" onclick="switchIframe(2)">各科成绩</div><br/>
 	    			<div id="div3" tabindex='3' class = "studentButton" onclick="switchIframe(3)">同学信息</div><br/>

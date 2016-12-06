@@ -57,9 +57,11 @@ public class LoginCheck extends HttpServlet implements Servlet {
 			}
 		}
 		if (position.equals("teacher")) {
-			if (util.student(Name, password)) {
+			if (util.teacher(Name, password)) {
 				session.setAttribute("userId", Name);
 				response.sendRedirect("Teacher.jsp");
+				session.setAttribute("teacher", util.teacherInformation(Name));
+				session.setAttribute("EachClassGrade",util.EachClassGrade(Name));
 			} else {
 				response.sendRedirect("Failure.jsp");
 			}

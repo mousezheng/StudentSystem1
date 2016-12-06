@@ -7,20 +7,20 @@
 
 </head>
 
-<body style="position: relative;">
+<body >
 	<!-- 最顶端的菜单栏用于在各个jsp文件中使用 -->
-	<div style="background-color: #45bff2;height:100%;width: 100%; ">
-		<h2 style="float: right;">
-			<a href="ResetPassword.jsp">重置密码</a>
-			<a href="Exit" >退出登录</a>
-		</h2>
-		<h2 style="float: right; color: 0022FF">${userId},您好！</h2>
-		<img alt="logo" src="logo.png" width="80px" height="80px"
-			style="float: left;">
-		<h1 style="float: left;padding-top: 25px">学生管理系统</h1>
-
-
-
+	<div style="background-color: #282828;height:100%;width: 100%; ">
+		<table width="100%" height="100%" style="color: #FFFFFF">
+			<tr>
+				<td width="200px">
+						<h1 >XATU学生管理系统</h1>
+				</td>
+				<td width="60%"></td>	
+				<td width="50px"><p>${userId},您好！</p></td>
+				<td width="50px"><a href="ResetPassword.jsp">重置密码</a></td>
+				<td width="50px"><a href="Exit" >退出登录</a></td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>

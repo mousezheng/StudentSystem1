@@ -7,7 +7,7 @@
   </head>
   
   <body>
-    <div style="background-color: #BBBBBB;height: 100%;width: 100%" align="center">
+    <div style="background-color: #252525;color:#EEEEEE; height: 100%;width: 100% ; font-size: 30" align="center">
     	作者：zsl<br/>
     	邮箱：1486145487@qq.com
     </div>
