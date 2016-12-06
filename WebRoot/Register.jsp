@@ -1,9 +1,9 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 
-<jsp:include page="Head.jsp"></jsp:include>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+  <link rel="stylesheet" href="bootstrap3.2.2/css/bootstrap.min.css">
     <title>学生注册页面</title>
 	<script type="text/javascript" language="javascript"> 
 		function judge()
@@ -32,38 +32,44 @@
   </head>
   
   <body>
-    <h2 align="center">学生注册页面</h2>
-    <hr>
+    <div style="height:8%">
+		<jsp:include page="Head.jsp"></jsp:include>
+	</div>
     
 	<!-- 注册学生信息 -->
-	<div  align="center">
+	<div  align="center" style="padding-top:100px;">
 	    <form name="form1" action="Register" method="post" >
-	    	<table>
+	    	<table style="border-collapse: separate;border-spacing: 40px;font-size: 30px;">
 	    		<tr>
-	    			<td>姓名</td>
+	    			<td>姓名:</td>
 	    			<td>
 	    				<input type="text" name = "studentName" id= "studentName" /> 
 	    			</td>
 	    		</tr>
 	    		<tr>
-	    			<td>密码</td>
+	    			<td>密码:</td>
 	    			<td>
 	    				<input type="password" name = "password" id="password"/> 
 	    			</td>
 	    		</tr>
 	    		<tr>
-	    			<td>确认密码</td>
+	    			<td>确认密码:&nbsp</td>
 	    			<td>
 	    				<input type="password" name = "confirmPassword" id="confirmPAssword" /> 
 	    			</td>
 	    		</tr>
 	    		<tr>
-		   			<td>选择课程</td>
+		   			<td>选择课程:&nbsp</td>
 		   			<td>
-		   				<input type="checkbox" name="classes" value="C"/>C语言
-		   				<input type="checkbox" name="classes" value="Java"/>Java
-		   				<input type="checkbox" name="classes" value="math"/>数学
-		   				<input type="checkbox" name="classes" value="chinese"/>语文
+		   				<input style="width:25px;height: 25px" type="checkbox" name="classes" value="C"/>C语言  &nbsp
+		   				<input style="width:25px;height: 25px" type="checkbox" name="classes" value="Java"/>Java &nbsp
+		   			</td>
+		   		</tr>
+		   		<tr>
+		   			<td> </td> 
+		   			<td>
+		   				<input style="width:25px;height: 25px"  type="checkbox" name="classes" value="math"/>数学  &nbsp
+		   				<input style="width:25px;height: 25px" type="checkbox" name="classes" value="chinese"/>语文  &nbsp
 		   			</td>
 		   		</tr>
 
@@ -78,9 +84,9 @@
 	    		<ty>
 	    			<td></td>
 	    			<td>
-		    			<input type="button" value="提交" onclick="judge()"/>
+		    			<input class="btn btn-lg btn-primary" type="button" value="提交" onclick="judge()"/>
 		    			 &nbsp
-		    			<input type="reset" value="重置" /> 
+		    			<input class="btn-lg btn-warning" type="reset" value="重置" /> 
 	    			</td>
 	    		</ty>	    		
 	    	</table>

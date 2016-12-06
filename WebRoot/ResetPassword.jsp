@@ -3,7 +3,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>修改密码</title>
+   <link rel="stylesheet" href="bootstrap3.2.2/css/bootstrap.min.css">
+   <title>修改密码</title>
     <script type="text/javascript" language="javascrpit">
     	function judge()
 		{
@@ -36,9 +37,9 @@
 	<div style="height:10%">
 		<jsp:include page="Head.jsp"></jsp:include>
 	</div>
-    <div style="width: 100%;height: 80%;background-color: 55EEEE" align="center">
+    <div style="width: 100%;height: 80%;background-color: 55EEEE" align="center" top="100Px">
 		<form name="form1" action="ResetPassword" align="center" style="padding-top: 100px">
-			<table  align="center" style="font-size: 25px">
+			<table  align="center" style="border-collapse: separate;border-spacing: 40px;font-size: 32px">
 		   		<tr>
 		   			<td>旧密码</td>
 		   			<td>
@@ -59,8 +60,8 @@
 		   		</tr>
 		   		<ty>
 		   			<td></td>
-		   			<td> <input style="font-size: 25px" type="button" value="提交" onclick="judge()" /> &nbsp
-		   			 <input style="font-size: 25px" style="" type="reset" value="重置" /> </td>
+		   			<td> <input class="btn btn-lg btn-primary" style="font-size: 25px" type="button" value="提交" onclick="judge()" /> &nbsp
+		   			 <input class="btn btn-lg btn-warning" style="font-size: 25px" style="" type="reset" value="重置" /> </td>
 		   		</ty>
 	   		</table>
 	   	</form>

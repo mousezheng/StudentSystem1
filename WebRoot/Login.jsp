@@ -40,9 +40,9 @@
 	<!--登录模块 -->
 	
 	<div 
-		style="padding-top: 4%; padding-right:10%; height: 84%; background-color: 00dddd;" align="right">	
+		style="padding-top: 4%; padding-right:10%; height: 94%; background-color: 00dddd;" align="right">	
 		
-		<div id="myCarousel" class="carousel slide" style="position:absolute; z-index: 1;width: 100%;height: 84%;top:8%">
+		<div id="carousl-ad" class="carousel slide" data-ride="carousel" style="position:absolute; z-index: 1;width: 100%;height: 94%;top:8%">
 			<!-- 轮播（Carousel）指标 -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -103,7 +103,7 @@
 					</tr>
 					<tr>
 						<td ><input class="btn btn-lg btn-primary" style="font-size: 25px" type="button" value="提交" onclick="judge()" />
-							&nbsp <input btn class="btn-lg btn-warning" style="font-size: 25px" type="reset" value="重置" /></td>
+							&nbsp <input class="btn-lg btn-warning" style="font-size: 25px" type="reset" value="重置" /></td>
 						<td></td>
 					</tr>
 				</table>

@@ -1,13 +1,9 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="<%=basePath%>">
     
     <title>登录失败</title>
     
@@ -22,7 +18,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </head>
   
-  <body>
+  <body style="font-size: 30px">
+     <div style="height:8%">
+		<jsp:include page="Head.jsp"></jsp:include>
+	</div>
    	<h1> 登录失败</h1> <hr>
    	用户名或密码错误，请<a href='Login.jsp'>重新登录</a>
   </body>

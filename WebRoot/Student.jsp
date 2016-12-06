@@ -4,6 +4,9 @@
 <html>
   <head>
     <title>学生页面</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript">
     	function switchIframe(num)
     	{ 
@@ -27,21 +30,22 @@
   </head>
   <style>
   	.studentButton{
-  		background-color:888888;
+  		background-color:8888BB;
   		width:100% ;
   		height: 15%;
   		font-size: 50px;
-  		padding-top: 20px
+  		padding-top: 20px;
+  		border-radius:20px;
+  		text-align:center
   	}
   	#div1:focus,#div2:focus,#div3:focus{
   		background-color:777777;
   	}
   </style>  
   <body>
-   	<div style="height:10%">
+   	<div style="height:8%">
     	<jsp:include page="Head.jsp"></jsp:include>
     </div>
-  
     <table name="table1" style="background-color: EEEEEE;height:90%;" width="100%">
     	<tr>
 	    	<td width="15%">
@@ -51,6 +55,7 @@
 	    			<div id="div3" tabindex='3' class = "studentButton" onclick="switchIframe(3)">同学信息</div><br/>
 	    		</div>
 	    	</td>
+	    	
 	 		<td width="80%">
 	 			<div  style="width:100%;background-color: DDDDDD;height: 100%" align="center">
 	 				<iframe id="iframe1" src="iframe/welcome.jsp" width="100%" height="100%" style="margin: 10px"></iframe> 
