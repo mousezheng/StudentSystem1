@@ -15,8 +15,8 @@
 				<td width="200px">
 						<h1 >XATU学生管理系统</h1>
 				</td>
-				<td width="60%"></td>	
-				<td width="50px"><p>${userId},您好！</p></td>
+				<td width="50%%"></td>	
+				<td width="50px"><p>${userId}  ,  您好！</p></td>
 				<td width="50px"><a href="ResetPassword.jsp">重置密码</a></td>
 				<td width="50px"><a href="Exit" >退出登录</a></td>
 			</tr>

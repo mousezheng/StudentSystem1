@@ -6,7 +6,7 @@ package xatu.entity;
  * 课程号，课程名，课时，代课老师
  * @author 郑思林
  */
-public class Class {
+public class Classes {
 	private String classId;
 	private String className;
 	private int classTime;

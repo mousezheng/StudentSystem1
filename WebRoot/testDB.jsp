@@ -17,10 +17,17 @@
   
   <body>
 <%
-	 String Driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	 String url="jdbc:sqlserver://localhost:1433;databaseName=test";
-	 String user="sa";
-	 String pwd="123456";
+	 //驱动名称
+		String Driver = "com.mysql.jdbc.Driver";
+		//要访问的数据库的链接
+		String url = "jdbc:mysql://127.0.0.1:3306/test";
+		//mysql 配置用户名 密码
+		String pwd = "1486145487";
+		String user = "root";
+// 	 String Driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
+// 	 String url="jdbc:sqlserver://localhost:1433;databaseName=test";
+// 	 String user="sa";
+// 	 String pwd="123456";
 	 Connection conn=null;
 	 try {
 	  Class.forName(Driver);

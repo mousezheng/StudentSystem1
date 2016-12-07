@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import xatu.entity.*;
-import xatu.entity.Class;
 
 /**
  * 
@@ -24,16 +23,29 @@ public class DatabaseUtil {
 	 * 初始化
 	 */
 	static DatabaseUtil myDButil = null;
-	// 加载驱动设置驱动链接
-	String url = "jdbc:sqlserver://localhost:1433;databaseName=test";
-	String userID = "sa";
-	String password = "123456";
+	//驱动名称
+	String driver = "com.mysql.jdbc.Driver";
+	//要访问的数据库的链接
+	String url = "jdbc:mysql://127.0.0.1:3306/test";
+	//mysql 配置用户名 密码
+	String password = "1486145487";
+	String user = "root";
+	
+	//sqlSever 数据库连接
+//	String url = "jdbc:sqlserver://localhost:1433;databaseName=test";
+//	String userID = "sa";
+//	String password = "123456";
 	Connection dbConn = null;
 
 	private DatabaseUtil() {
 		try {
-			dbConn = DriverManager.getConnection(url, userID, password);
-		} catch (SQLException e) {
+			//加载驱动
+			Class.forName(driver);
+			//链接数据库
+			dbConn = DriverManager.getConnection(url, user, password);
+		}catch (ClassNotFoundException e) {
+			System.out.println("驱动加载失败！");
+		}catch (SQLException e) {
 			System.out.println("数据库连接错误!");
 		}
 	}
@@ -44,6 +56,7 @@ public class DatabaseUtil {
 	 * @return DatabaseUtil
 	 */
 	public static DatabaseUtil getDatabaseUtil() {
+		
 		if (myDButil == null) {
 			myDButil = new DatabaseUtil();
 		}
@@ -228,8 +241,8 @@ public class DatabaseUtil {
 	 * 
 	 * @return
 	 */
-	public List<Class> studentClassGrade(String studentId) {
-		List<Class> classGrade = new ArrayList<Class>();
+	public List<Classes> studentClassGrade(String studentId) {
+		List<Classes> classGrade = new ArrayList<Classes>();
 		String sql_1 = "SELECT b.classId,c.className,c.classTime,b.grade "
 				+ "FROM student_class b,class c "
 				+ "WHERE b.studentId=? and b.classId=c.classId";
@@ -240,7 +253,7 @@ public class DatabaseUtil {
 
 			// 强结果集存储在 classGrade 中
 			while (rs.next()) {
-				Class classes = new Class();
+				Classes classes = new Classes();
 				classes.setClassId(rs.getString(1));
 				classes.setClassName(rs.getString(2));
 				classes.setClassTime(Integer.parseInt(rs.getString(3).replace(

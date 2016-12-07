@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import xatu.XH.DBUtil.DatabaseUtil;
-import xatu.entity.Class;
+import xatu.entity.Classes;
 
 public class StudentPage extends HttpServlet implements Servlet {
 

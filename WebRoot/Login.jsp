@@ -7,7 +7,7 @@
 <head>
 
 <link rel="stylesheet" href="bootstrap3.2.2/css/bootstrap.min.css">
-<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="bootstrap3.2.2/js/jquery-2.1.1.min.js"></script>
 <script src="bootstrap3.2.2/js/bootstrap.min.js"></script>
 <title>登录页面</title>
 <script type="text/javascript" language="javascript">
@@ -80,7 +80,7 @@
 						<td>
 					</tr>
 					<tr>
-						<td><input style="height: 30px" id="name" type="text" name="name">
+						<td><input style="height: 30px;color: 000000;" id="name" type="text" name="name">
 						</td>
 						<td><a href="Register.jsp">学生注册</a>
 						</td>
@@ -90,7 +90,7 @@
 						<td></td>
 					</tr>
 					<tr>
-						<td><input style="height: 30px" id="password" type="password" name="password">
+						<td><input style="height: 30px;color: 000000;" id="password" type="password" name="password">
 						</td>
 						<td></td>
 					</tr>
