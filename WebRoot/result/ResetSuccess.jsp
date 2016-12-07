@@ -23,7 +23,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   	<h1> 密码修改成功</h1> <hr>
-   	请使用新密码<a href='Login.jsp'>重新登录</a>
+	  <div style="font-size: 30px">
+	  	<h1 style="font-size: 30px"> 密码修改成功</h1> <hr>
+   		<p style="font-size: 100px" >请使用新密码<a href='Login.jsp'>重新登录</a></p>
+	  </div>
+   	
   </body>
 </html>

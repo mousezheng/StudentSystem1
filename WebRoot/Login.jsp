@@ -96,8 +96,8 @@
 					</tr>
 					<tr>
 						<td style="font-size: 30px">
-							<input  type="radio" value="student" name="position"
-							checked="true">学生 &nbsp <input type="radio"
+							<input style="width: 20px;height:20px"  type="radio" value="student" name="position"
+							checked="true">学生 &nbsp <input style="width: 20px;height:20px" type="radio"
 							value="teacher" name="position">教师</td>
 						<td></td>
 					</tr>

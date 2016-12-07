@@ -22,8 +22,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </head>
   
-  <body>
-   	<h1> 注册失败</h1> <hr>
-   	您可以<a href='Register.jsp'>重新注册</a>或者<a href="Login.jsp">返回登录页面</a>
+  <body >
+  	<div style="font-size: 30px">
+	   	<h1> 注册失败</h1> <hr>
+	   	您可以<a href='Register.jsp'>重新注册</a>或者<a href="Login.jsp">返回登录页面</a>
+ 	</div>
   </body>
 </html>

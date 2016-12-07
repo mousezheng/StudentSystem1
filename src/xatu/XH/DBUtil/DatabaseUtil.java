@@ -333,4 +333,34 @@ public class DatabaseUtil {
 
 		return null;
 	}
+
+	/**
+	 * 学生选课需要更新学生课程表
+	 * @param classes
+	 * @param id 
+	 * @throws SQLException 
+	 */
+	public void updataStudentClass(String[] classes, int id) throws SQLException {
+		String sql = "INSERT INTO student_class values(?,?,?)";
+		for (int i = 0; i < classes.length; i++) {
+			String num = null;
+			System.out.println(classes[i]);
+			if(classes[i].equals("C")) num = "20001";
+			if(classes[i].equals("Java")) num = "20002";
+			if(classes[i].equals("math")) num = "20003";
+			if(classes[i].equals("chinese")) num = "20004";
+			PreparedStatement statement = dbConn.prepareStatement(sql);
+			statement.setString(1, num);
+			statement.setString(2, id+"");
+			statement.setString(3, "");
+			statement.executeUpdate();
+		}
+		System.out.println("更新学生课程完毕");
+	}
 }
+
+
+
+
+
+

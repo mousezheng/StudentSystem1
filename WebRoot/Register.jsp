@@ -24,9 +24,8 @@
 			 	window.alert("确认密码与新密码不一致");
 			 	return ;
 			 }
-			 document.getElementById("form1").submit();
+			 document.form1.submit();
 		} 
-		
 	</script> 
   
   </head>
@@ -38,7 +37,7 @@
     
 	<!-- 注册学生信息 -->
 	<div  align="center" style="padding-top:100px;">
-	    <form name="form1" action="Register" method="post" >
+	    <form name="form1" action="Register" method="post">
 	    	<table style="border-collapse: separate;border-spacing: 40px;font-size: 30px;">
 	    		<tr>
 	    			<td>姓名:</td>
@@ -72,7 +71,10 @@
 		   				<input style="width:25px;height: 25px" type="checkbox" name="classes" value="chinese"/>语文  &nbsp
 		   			</td>
 		   		</tr>
-
+<!-- 				<tr> -->
+<!-- 		   			<td>上传照片：</td> -->
+<!-- 		   			<td><input id="photo" name="photo" type="file" > </td> -->
+<!-- 		   		</tr> -->
 <!-- 	    		<tr> -->
 <!-- 	    			<td>上传照片</td> -->
 <!-- 	    			<td colspan="2"><input type="file" logo.png" width="120px" height="240px" /> </td> -->

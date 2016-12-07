@@ -22,9 +22,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </head>
   
-  <body>
-   	<h1> 注册成功</h1> <hr>
-   	您的ID为：${param.ID}<br>
-   	<a href='Login.jsp'>返回登录页面</a>
+  <body >
+  	<div style="font-size: 30px">
+  		<h1> 注册成功</h1> <hr>
+	   	您的ID为：${param.ID}<br>
+	   	<a href='Login.jsp'>返回登录页面</a>
+  	</div>
+   
   </body>
 </html>
