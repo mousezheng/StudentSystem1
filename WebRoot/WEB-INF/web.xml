@@ -29,7 +29,10 @@
     <servlet-name>Exit</servlet-name>
     <servlet-class>xatu.ZSL.servlet.Exit</servlet-class>
   </servlet>
-
+  <servlet>
+    <servlet-name>UpdataGrade</servlet-name>
+    <servlet-class>xatu.ZSL.servlet.UpdataGrade</servlet-class>
+  </servlet>
 
 
 
@@ -56,6 +59,10 @@
   <servlet-mapping>
     <servlet-name>Exit</servlet-name>
     <url-pattern>/Exit</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>UpdataGrade</servlet-name>
+    <url-pattern>/UpdataGrade</url-pattern>
   </servlet-mapping>	
   <welcome-file-list>
     <welcome-file>Login.jsp</welcome-file>

@@ -357,6 +357,19 @@ public class DatabaseUtil {
 		}
 		System.out.println("更新学生课程完毕");
 	}
+
+	public void updataGrade(String studentId, String grade) {
+		String sql_1 = "update student_class set grade= ? where studentId = ?";
+		 
+		try {
+			PreparedStatement statement = dbConn.prepareStatement(sql_1);
+			statement.setString(1, grade);
+			statement.setString(2, studentId);
+			statement.executeUpdate();
+		} catch (SQLException e) {
+			System.out.println("更新成绩出错！");
+		}
+	}
 }
 
 
