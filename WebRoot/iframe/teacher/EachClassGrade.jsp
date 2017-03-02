@@ -45,11 +45,23 @@
 	  					<td><c:out value="${classGrade.studentNum }"></c:out>	</td>
 	  					<td><c:out value="${classGrade.className }"></c:out>	</td>
 	  					<td><c:out value="${classGrade.grade }"></c:out>	</td>
+	  					<td><input class="btn btn-lg btn-primary" type="button" value="修改" onclick="setGrade('${classGrade.studentNum}')"></td>
 	  				</tr>
-	  				<td><input class="btn btn-lg btn-primary" type="button" value="修改" onclick="setGrade('${classGrade.studentNum}')"></td>
+	  				
   				</c:if>
-  				<c:set var="num" value="${num+1%2 }"></c:set>
+  				<c:set var="num" value="${(num+1)%2 }"></c:set>
   			</c:forEach>
+  			<tr>
+	  			<td colspan="5" align="center">
+	  				<input class="btn btn-lg btn-primary" type="button" value="<-">
+	  				<input class="btn btn-lg btn-primary" type="button" value="1">
+	  				<input class="btn btn-lg btn-primary" type="button" value="2">
+	  				<input class="btn btn-lg btn-primary" type="button" value="3">
+	  				<input class="btn btn-lg btn-primary" type="button" value="->">
+	  				<input type="text"  width="100px">
+	  				<span class="glyphicon glyphicon-search"  oncluck="select()"></span>
+	  			</td>
+	  		</tr>
   		</table>
   </body>
 </html>

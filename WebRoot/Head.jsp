@@ -13,7 +13,7 @@
 		<table width="100%" height="100%" style="color: #FFFFFF">
 			<tr>
 				<td width="200px">
-						<h1 >XATU学生管理系统</h1>
+						<h1 onclick="window.location.href='Login.jsp'">XATU学生管理系统</h1>
 				</td>
 				<td width="50%%"></td>	
 				<td width="50px"><p>${userId}  ,  您好！</p></td>

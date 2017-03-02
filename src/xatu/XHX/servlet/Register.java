@@ -41,7 +41,7 @@ public class Register extends HttpServlet implements Servlet {
 			// return;
 		}
 
-		String studentId = 1401 + "" + id;
+		String studentId = 1402 + "" + id;
 		id++;
 		application.setAttribute("studentId", id);
 //		saveFile(response, request, id);
@@ -56,7 +56,7 @@ public class Register extends HttpServlet implements Servlet {
 
 		DatabaseUtil util = DatabaseUtil.getDatabaseUtil();
 		try {
-			util.updataStudentClass(classes,id);
+			util.updataStudentClass(classes,studentId);
 		} catch (SQLException e) {
 			System.out.println("更新课程出错！");
 		}

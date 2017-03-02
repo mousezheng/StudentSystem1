@@ -256,8 +256,7 @@ public class DatabaseUtil {
 				Classes classes = new Classes();
 				classes.setClassId(rs.getString(1));
 				classes.setClassName(rs.getString(2));
-				classes.setClassTime(Integer.parseInt(rs.getString(3).replace(
-						" ", "")));
+				classes.setClassTime(Integer.parseInt(rs.getString(3).replace(" ", "")));
 				classes.setGrade(Integer.parseInt(rs.getString(4).replace(" ",
 						"")));
 				classGrade.add(classes);
@@ -277,8 +276,9 @@ public class DatabaseUtil {
 	public List<Student> studentClassmaters(String studentId) {
 		List<Student> classMates = new ArrayList<Student>();
 		String sql_1 = "SELECT s.studentId,s.studentName "
-				+ "FROM student_class b,students s WHERE b.studentId = s.studentId and s.studentId != ? and b.classId in "
-				+ "(SELECT classId FROM student_class b where b.classId = ? )";
+				+ "FROM student_class b,students s " +
+				" WHERE b.studentId = s.studentId and s.studentId != ? and b.classId in "
+				+ "(SELECT classId FROM student_class b where b.studentId = ? )";
 		try {
 			PreparedStatement statement = dbConn.prepareStatement(sql_1);
 			statement.setString(1, studentId);
@@ -340,7 +340,7 @@ public class DatabaseUtil {
 	 * @param id 
 	 * @throws SQLException 
 	 */
-	public void updataStudentClass(String[] classes, int id) throws SQLException {
+	public void updataStudentClass(String[] classes, String id) throws SQLException {
 		String sql = "INSERT INTO student_class values(?,?,?)";
 		for (int i = 0; i < classes.length; i++) {
 			String num = null;
@@ -351,8 +351,8 @@ public class DatabaseUtil {
 			if(classes[i].equals("chinese")) num = "20004";
 			PreparedStatement statement = dbConn.prepareStatement(sql);
 			statement.setString(1, num);
-			statement.setString(2, id+"");
-			statement.setString(3, "");
+			statement.setString(2, id);
+			statement.setString(3, 0+"");
 			statement.executeUpdate();
 		}
 		System.out.println("更新学生课程完毕");

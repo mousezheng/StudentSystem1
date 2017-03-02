@@ -37,7 +37,7 @@
 	<div style="height:10%">
 		<jsp:include page="Head.jsp"></jsp:include>
 	</div>
-    <div style="width: 100%;height: 80%;background-color: 55EEEE" align="center" top="100Px">
+    <div style="width: 100%;height: 80%;" align="center" top="100Px">
 		<form name="form1" action="ResetPassword" align="center" style="padding-top: 100px">
 			<table  align="center" style="border-collapse: separate;border-spacing: 40px;font-size: 32px">
 		   		<tr>

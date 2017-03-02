@@ -10,7 +10,7 @@
   <body style="background-color: #BBBBBB">
   	<h1 align="center">学生各科成绩</h1><hr/>
   	<div class="container" style="padding-top: 10%;">
-	  	<table class="table table-hover table-striped" style="font-size: 40px;text-align: center;" align="center">
+	  	<table class="table table-hover table-striped" style="font-size: 40px;text-align: center;background-color: #FFFFFF" align="center">
 	  		<thead>
 		  		<tr>
 		  			<th style="text-align: center"  width="10%">课程号</th>
@@ -37,8 +37,19 @@
 		  				<td><c:out value="${classGrade.grade}"></c:out> </td>
 		  			</tr>
 	  			</c:if>
-	  			<c:set var="num" value="${num+1%2 }"></c:set>
+	  			<c:set var="num" value="${(num+1)%2 }"></c:set>
 	  		</c:forEach>
+	  		<tr>
+	  			<td colspan="4" align="center">
+	  				<input class="btn btn-lg btn-primary" type="button" value="<-">
+	  				<input class="btn btn-lg btn-primary" type="button" value="1">
+	  				<input class="btn btn-lg btn-primary" type="button" value="2">
+	  				<input class="btn btn-lg btn-primary" type="button" value="3">
+	  				<input class="btn btn-lg btn-primary" type="button" value="->">
+	  				<input type="text"  width="100px">
+	  				<span class="glyphicon glyphicon-search"  oncluck="select()"></span>
+	  			</td>
+	  		</tr>
 	  	</table>  	
   	</div>
 

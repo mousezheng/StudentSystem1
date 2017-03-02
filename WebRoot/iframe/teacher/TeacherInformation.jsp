@@ -24,7 +24,7 @@
 	  			<td>${teacher.className}</td>
 	  		</tr>
 	  		<tr>
-	  			<td>所带课程:</td>
+	  			<td>课程课时:</td>
 	  			<td>${teacher.classTime}</td>
 	  		</tr>
 	  	</table>
